@@ -1,0 +1,464 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>EXAMROOM</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  
+  
+    <link href="assets/css/style.css" rel="stylesheet">
+  
+  </head>
+  <script>
+      $(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 180) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 200) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+function linkjs() {
+        window.location = "http://localhost:4200/"
+}
+  </script>
+  
+  <body>
+  
+  
+    <header id="header" class="fixed-top" >
+      <div class="container d-flex align-items-center" >
+       
+        <h1 class="logo me-auto"><a href="index.html">EXAMROOM</a></h1>
+       
+        <nav id="nav_bar" class="navbar order-last order-lg-0" style="margin-left:25%;;">
+          <ul >
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">EXAMS</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Reading</a></li>
+  
+            <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+      </div>
+    </header><!-- End Header -->
+  <a onClick="linkjs()">
+    <section id="hero" class="d-flex justify-content-center align-items-center">
+      <div class="container position-relative">
+        <h1>Learning Today,<br>Leading Tomorrow</h1>
+        <h2>We are team of talented students of GLA University, Working together on Mini Project-I</h2>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, quasi commodi odit amet voluptatem sequi dolorem esse eaque consequatur, doloremque ut enim placeat, ipsam at culpa praesentium magnam beatae animi?</h2>
+      </div>
+    </section><!-- End Hero -->
+</a>
+    <button onclick="linkjs()" class="get-started-btn" style="margin-left: 45%;">EXPLORE US</button>
+    
+  
+    <main id="main">
+  
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+              <h3>Welcome To EXAMROOM. This is our Mini Project Front-End UI </h3>
+              <p class="fst-italic">
+               We provide you a exam enviromnment where you can prepare for your exams.
+                Let learn together and grow together. 
+              </p>
+              <ol>
+                <li><i class="bi bi-check-circle"></i> We have secure and fast System .</li>
+                <li><i class="bi bi-check-circle"></i> We provide fast service .</li>
+                <li><i class="bi bi-check-circle"></i> Your Data is safe with us.</li>
+              </ol>
+              <p>
+                Get notified with all the trends and changes in the Self Learner Community
+              </p>
+  
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Section -->
+  
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts section-bg" >
+        <div class="container">
+  
+          <div class="row counters" style="display: flex;">
+  
+            <div class="col-lg-3 col-6 text-center" style="margin-left: 0%;">
+              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter">0</span>
+              <p>Students</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center" style="margin-left: 15%;">
+              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter">0</span>
+              <p>Courses</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center" style="margin-left: 20%;">
+              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter">0</span>
+              <p>Events</p>
+            </div>
+  
+            <div class="col-lg-3 col-6 text-center" style="margin-left: 30%;">
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter">0</span>
+              <p>Admin</p>
+            </div>
+  
+          </div>
+  
+        </div>
+ </section><!-- End Counts Section -->
+ 
+
+
+ 
+ <div id="slideshow-container">
+
+    <div class="mySlides fade">
+       
+      <div class="numbertext"></div>
+      <img src="https://media.istockphoto.com/photos/code-programming-for-website-editors-view-picture-id1290492381?b=1&k=20&m=1290492381&s=170667a&w=0&h=NQSXJKhncCP1GLzDkD8KPZsCOh1wldDj5RZbPVJztxQ=">
+     
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://media.istockphoto.com/photos/a-medical-exam-conducted-at-india-in-wooden-block-leters-on-table-picture-id1170737999?b=1&k=20&m=1170737999&s=170667a&w=0&h=O01bBwLedo03ZNBtCEa9zgug9_yRRWES7C7wqlV8cM4=">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://media.istockphoto.com/photos/concept-of-jee-exam-conducted-in-india-for-recruitment-in-wooden-picture-id1171159651?b=1&k=20&m=1171159651&s=170667a&w=0&h=B-FyYDfGr5neN3-3UpDmjeuWrWu-6Brk5rbuQAx8j5E=">
+     
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="https://media.istockphoto.com/photos/abstract-digital-network-communication-picture-id888477728?b=1&k=20&m=888477728&s=170667a&w=0&h=ZX15pWkxepMHlk0pg4EMwBiobixDCNmGd-FgDCGf7p8=">
+     
+    </div>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 4 seconds
+        }
+    
+    
+        
+       
+        
+    </script>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="row">
+            <div class="col-lg-4 d-flex align-items-stretch">
+              <div class="content">
+                <h3>Why Choose EXAMROOM?</h3>
+                <p>
+                  We provide a web application to user through which examiners/admin can conduct online examinations and students can attempt those examinations.
+                  Admin can add examination on a date of their interest and enter an objective-type question-answers along with the correct answers. 
+                  Students need to enroll and give the examination. 
+                </p>
+                <div class="text-center">
+                  <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-boxes d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-xl-4 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <i class="bx bx-receipt"></i>
+                      <h4>Corporis voluptates sit</h4>
+                      <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <i class="bx bx-cube-alt"></i>
+                      <h4>Ullamco laboris ladore pan</h4>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <i class="bx bx-images"></i>
+                      <h4>Labore consequatur</h4>
+                      <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- End .content-->
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Why Us Section -->
+  
+  
+      <!-- ======= Popular Courses Section ======= -->
+      <section id="popular-courses" class="courses">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Exams</h2>
+            <p>Popular EXAMS</p>
+          </div>
+            <div class="cardSection" style=" margin-left: 5%;">
+                <div class="image" id="cards">
+                    <img class="image_img" src="https://media.istockphoto.com/photos/concept-of-gre-exam-in-wooden-block-letters-on-table-picture-id1171161902?b=1&amp;k=20&amp;m=1171161902&amp;s=170667a&amp;w=0&amp;h=b81JPIfUpzRnVe6FXOCxFK20m7hJplcafPYXkApQlTI=" alt="Sorry">
+                    <div class="image_overlay">
+                        <div class="image_title">
+                            GRE
+                        </div>
+                        <a href="#">
+                            <button class="GetIn">View More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image_img" src="https://media.istockphoto.com/photos/setting-the-page-on-fire-with-some-hard-work-picture-id492198113?b=1&amp;k=20&amp;m=492198113&amp;s=170667a&amp;w=0&amp;h=CBWxkL9fuZlpUKhnYVsWzcuGGrXiYTs7kxYgOlsSUoY=" alt="Sorry">
+                    <div class="image_overlay">
+                        <div class="image_title">
+                            Apptitude
+                        </div>
+                        <a href="#">
+                            <button id="GetIn">View More</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="image">
+                    <img class="image_img" src="https://media.istockphoto.com/photos/innovation-and-new-ideas-lightbulb-concept-with-question-mark-picture-id1279690557?b=1&amp;k=20&amp;m=1279690557&amp;s=170667a&amp;w=0&amp;h=BnH7EPIgwwpPyKMfeBJr87Ql900NFKjLYknrzvfi3Dw=" alt="Sorry">
+                    <div class="image_overlay">
+                        <div class="image_title">
+                            Custom Exam
+                        </div>
+                        <a href="#">
+                            <button id="GetIn">View More</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
+  
+        </div>
+        <!--kjl-->
+  
+        
+      </section><!-- End Popular Courses Section -->
+  
+
+      
+    </main><!-- End #main -->
+  
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+  
+      <div class="footer-top">
+        <div class="container" style="margin-left: 8%;">
+          <div class="row" style="display: flex;" >
+  
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>EXAMROOM</h3>
+              <p>
+                GLA UNIVERSITY <br>
+                Mathura, UP 221001<br>
+                India <br><br>
+                <strong>Phone:</strong> +91 8081-044-632<br>
+                <strong>Email:</strong> kinjal.varshney_cs19@gla.ac.in<br>
+              </p>
+            </div>
+  
+            <div class="col-lg-2 col-md-6 footer-links" style="margin-left:5%;">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-3 col-md-6 footer-links"  style="margin-left:10%;">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Custom Exams</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Admin Exam</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Choose Exam</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 footer-newsletter"  style="margin-left:15%;">
+              <h4>Join Our Newsletter</h4>
+              <p>Email Us for any Enquires</p>
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container d-md-flex py-4">
+  
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright"  style="margin-left:40%;">
+            © Copyright <strong><span>Examroom</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits"  style="margin-left:40%;">
+            Designed by <a href="#">AKKSS</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0"  style="margin-left:40%;">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+  
+    
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  
+  <!-- Vendor JS Files -->
+  <script src="purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  <!-- Code injected by live-server -->
+  <script type="text/javascript">
+      // <![CDATA[  <-- For SVG support
+      if ('WebSocket' in window) {
+          (function () {
+              function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                      var elem = sheets[i];
+                      var parent = elem.parentElement || head;
+                      parent.removeChild(elem);
+                      var rel = elem.rel;
+                      if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                          var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                          elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                      }
+                      parent.appendChild(elem);
+                  }
+              }
+              var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+              var address = protocol + window.location.host + window.location.pathname + '/ws';
+              var socket = new WebSocket(address);
+              socket.onmessage = function (msg) {
+                  if (msg.data == 'reload') window.location.reload();
+                  else if (msg.data == 'refreshcss') refreshCSS();
+              };
+              if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                  console.log('Live reload enabled.');
+                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+              }
+          })();
+      }
+      else {
+          console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+      }
+      // ]]>
+  </script>
+  
+  </body></html>
