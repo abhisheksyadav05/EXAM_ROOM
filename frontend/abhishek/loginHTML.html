@@ -1,0 +1,27 @@
+
+<link rel="stylesheet" href="loginCSS.css">
+
+
+
+<div class="login-box">
+  <h2>Login</h2>
+  <form  >
+    <div class="user-box">
+      <input [(ngModel)]="loginData.username" type="text" name="username" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input [(ngModel)]="loginData.password" type="password" name="password" required="">
+      <label>Password</label>
+    </div>
+    <a (click)="formSubmit()" >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  
+
+  </form>
+</div>
