@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXAMROOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+    <script> 
+    function linkjs() {
+        window.location = "http://localhost:4200/"
+}
+
+$(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the 
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 180) {
+      $('#nav_bar').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 200) {
+      $('#nav_bar').removeClass('navbar-fixed');
+    }
+  });
+});
+        
+      
+   
+      </script> 
+
+</head>
+<body>
+    <nav >
+    <div >
+        <nav id='nav_bar'>
+        <ul class='nav_links' id="navul" >
+            <li style="font-family: 'Roboto Mono', monospace;;font-size: x-large;">EXAMROOM</li>
+              <a href="#" style="margin-left:20%">  <button style="font-size: large;font-family: 'Roboto Mono', monospace; ">HOME</button> </a> </li>
+              <a href="#" style="margin-left:2%">  <button style="font-size: large;font-family: 'Roboto Mono', monospace; ">ABOUT</button> </a> </li>
+              <a href="#" style="margin-left:2%">  <button style="font-size: large;font-family: 'Roboto Mono', monospace; ">CONTACT US</button> </a> </li>
+              <a href="#" style="margin-left:2%">  <button style="font-size: large;font-family: 'Roboto Mono', monospace; ">LEARN MORE</button> </a> </li>
+        </ul>
+    </nav>
+
+
+
+
+    </div>
+
+
+  <div class="container">
+    <div id="header">
+    </div>
+    
+    <div class="cover">
+        <button onclick="linkjs()" style="background-color: Transparent;">
+      <p class="first">EXAMROOM</p><br>
+      <p class="second">One Destination for all Self Learner  </p>
+ </button>
+    </div>
+
+    <div class="note">
+      <p>Get notified with all the trends and changes in the Self Learner Community</p>
+    </div>
+    
+    <div id="slideshow-container">
+
+        <div class="mySlides fade">
+           
+          <div class="numbertext">1 / 4</div>
+          <img src="https://media.istockphoto.com/photos/code-programming-for-website-editors-view-picture-id1290492381?b=1&k=20&m=1290492381&s=170667a&w=0&h=NQSXJKhncCP1GLzDkD8KPZsCOh1wldDj5RZbPVJztxQ=">
+         <div class="text">Register Yourself and Learn</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="https://media.istockphoto.com/photos/a-medical-exam-conducted-at-india-in-wooden-block-leters-on-table-picture-id1170737999?b=1&k=20&m=1170737999&s=170667a&w=0&h=O01bBwLedo03ZNBtCEa9zgug9_yRRWES7C7wqlV8cM4=">
+          <div class="text">NEET</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="https://media.istockphoto.com/photos/concept-of-jee-exam-conducted-in-india-for-recruitment-in-wooden-picture-id1171159651?b=1&k=20&m=1171159651&s=170667a&w=0&h=B-FyYDfGr5neN3-3UpDmjeuWrWu-6Brk5rbuQAx8j5E=">
+          <div class="text">JEE</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="https://media.istockphoto.com/photos/abstract-digital-network-communication-picture-id888477728?b=1&k=20&m=888477728&s=170667a&w=0&h=ZX15pWkxepMHlk0pg4EMwBiobixDCNmGd-FgDCGf7p8=">
+          <div class="text">Programming</div>
+        </div>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+        </div>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 4 seconds
+            }
+        
+        
+            
+           
+            
+        </script>
+       
+
+        </div >
+        <div class="aboutUs" id="About">
+            <h1 style="text-align: center;color: black;">Why ExamRoom ?</h1>
+            <p style="text-align: center;"> We provide a web application to user through which examiners/admin can conduct online examinations and students can attempt those examinations.
+                 Admin can add examination on a date of their interest and enter an objective-type question-answers along with the correct answers. 
+                 Students need to enroll and give the examination. 
+                 Each question needs to be attempted in a maximum specific time-limit set by the examiner.
+                 After submitting, the students will be able to review their submissions and check the results.</p>
+        </div>
+        <br>
+    <hr>
+    <br>
+    <div class="examSection">
+        <h1 style=" margin-left: 50px; font-size: 45px; color:black" >EXAMS :</h1>
+        <div class="cardSection" style=" margin-left: 9%;">
+            <div class="image" id="cards">
+                <img class="image_img" src="https://media.istockphoto.com/photos/concept-of-gre-exam-in-wooden-block-letters-on-table-picture-id1171161902?b=1&k=20&m=1171161902&s=170667a&w=0&h=b81JPIfUpzRnVe6FXOCxFK20m7hJplcafPYXkApQlTI=" alt="Sorry">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        GRE
+                    </div>
+                    <a href="#">
+                        <button class="GetIn">View More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image">
+                <img class="image_img" src="https://media.istockphoto.com/photos/setting-the-page-on-fire-with-some-hard-work-picture-id492198113?b=1&k=20&m=492198113&s=170667a&w=0&h=CBWxkL9fuZlpUKhnYVsWzcuGGrXiYTs7kxYgOlsSUoY=" alt="Sorry">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        Apptitude
+                    </div>
+                    <a href="#">
+                        <button id="GetIn">View More</button>
+                    </a>
+                </div>
+            </div>
+            <div class="image">
+                <img class="image_img" src="https://media.istockphoto.com/photos/innovation-and-new-ideas-lightbulb-concept-with-question-mark-picture-id1279690557?b=1&k=20&m=1279690557&s=170667a&w=0&h=BnH7EPIgwwpPyKMfeBJr87Ql900NFKjLYknrzvfi3Dw=" alt="Sorry">
+                <div class="image_overlay">
+                    <div class="image_title">
+                        Custom Exam
+                    </div>
+                    <a href="#">
+                        <button id="GetIn">View More</button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="container">
+        <div  id = "footer" id="Contact"></div>
+        <!--kinjal code-->
+        <div class="footer" >
+            <div class="footer-content">
+                <div class="footer-section about1">
+                    <h1 class="logo-text"><span>Exam</span>Room</h1>
+                    <br>
+                    <p>
+                        Lets Learn Together and Grow Together!!
+                    </p>
+                    <br>
+                    <div class="contact">
+                        <span><i class="fas fa-phone"></i> &nbsp; 808-104-4632</span>
+                        <span><i class="fas fa-envelope"></i> &nbsp; kinjal.varshney_cs19@gla.ac.in</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fab fa-facebook" style="color: rgb(81, 112, 211);"></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: rgb(245, 117, 138);"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: rgb(39, 133, 240);"></i></a>
+                        <a href="#"><i class="fab fa-youtube" style="color: red;"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2>
+                    <br>
+                    <ul>
+                       <li> <a href="#Home">
+                           Home
+                        </a>
+                    </li>
+                       <li><a href="#About">
+                        About 
+                        </a>
+                    </li> 
+
+                       <li> <a href="#">
+                    Terms
+                        </a>
+                    </li>
+                       <li> <a href="#">
+                            Privacy
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <form action="index.html" method="post">
+                        <input type="email" name="email" class="text-input contact-input"
+                            placeholder="Your email address...">
+                        <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+                        <button type="submit" class="btn btn-big contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            send
+                        </button>
+                    </form>
+                </div>
+            </div>
+  
+            <div class="footer-bottom">
+                &copy; EXAMROOM | Designed by AKKS
+            </div>
+
+        <!--kinjal code-->
+        </div>
+    </div>
+        
+</body>
+</html>
