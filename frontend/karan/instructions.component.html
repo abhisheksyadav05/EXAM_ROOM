@@ -1,0 +1,73 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+                    <mat-card-header>
+
+                    </mat-card-header>
+                    <mat-card-title>
+                           Read The Instructions Carefully!! 
+                    </mat-card-title>
+                    <mat-card-content>
+                        <h3>{{quiz.title}}</h3>
+                        <p>{{quiz.description}}</p>
+                        <mat-divider></mat-divider>
+                        <h1>Important Instructions</h1>
+                        <ul>
+                            <li>This is for testing purpose</li>
+                            <li>Time :<b> {{quiz.numberofQuestions*2}} Minutes </b></li>
+                            <li><b>Questions : {{quiz.numberofQuestions}} </b></li>
+                            <li><b>M.M : {{quiz.maxMarks}} </b> Each: <b> {{quiz.maxMarks/quiz.numberofQuestions}} Marks </b></li>
+                            <li>Be Honest to yourself!! as proctor Module is not implemented yet</li>
+                            <li><b>No Negative Marking</b></li>
+                            <li>All Question is MCQ type</li>
+                        </ul>
+                        <!--shjdn-->
+                        <mat-divider></mat-divider>
+            <br />
+            <h1>Attempting Quiz</h1>
+            <ul>
+              <li>Click <b>Start Quiz</b> button to start the quiz</li>
+              <li>
+                The time will start the moment you click the Start Test button.
+              </li>
+              <li>
+                You can not resume this quiz, if interrupted due to any reason.
+              </li>
+              <li>Scroll downl to move to next question.</li>
+              <li>Click on Submit Quiz button on completion of the quiz.</li>
+              <li>
+                Report of the test is automatically generated in the form of PDF
+                copy
+              </li>
+              <li>
+                In Case if any Problem get occured during exam !!  Contact your Admin  ..We will reschedule the exam.
+              </li>
+            </ul>
+
+
+
+
+
+
+
+                        <!--shjdn-->
+                        
+                    </mat-card-content>
+                    <mat-card-actions class="text-center">
+                        <!-- actions -->
+                        <button
+                         [routerLink]="'/start/'+qid"
+                          class=""
+                          mat-raised-button
+                          color="primary"
+                        >
+                          Start QUIZ
+                        </button>
+                      </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
