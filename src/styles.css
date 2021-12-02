@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+ body 
+ { height: 100%;
+    
+    width: 100%;
+    background-image: linear-gradient(to right, #499b90, lightblue);
+    background-repeat: no-repeat;
+
+  
+
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.text-center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

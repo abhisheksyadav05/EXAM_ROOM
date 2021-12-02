@@ -1,0 +1,11 @@
+.truncate{
+    display:block;
+    white-space:nowrap;
+    width:100%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.example-header-image{
+    background-image:url('https://image.shutterstock.com/image-vector/quiz-comic-pop-art-style-260nw-1506580442.jpg');
+    background-size:cover;
+}

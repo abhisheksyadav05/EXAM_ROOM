@@ -1,0 +1,86 @@
+<!-- <div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                <div class="container text-center" >
+                    
+                    <img src="../../assets/EXR.jpg" alt=""/>
+                </div>
+                <h1 class="text-center">Login here!!!!</h1>
+               <!--- {{loginData |json}}--
+                <form class="abc"(ngSubmit)="formSubmit()">
+                    <!--username field--
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>USER NAME</mat-label>
+                        <input
+                           [(ngModel)]="loginData.username"
+                           name="username"
+
+                        required
+                        
+                        
+                        matInput placeholder="username">
+                      </mat-form-field><br>
+                
+                      <!--
+                          password field
+                      --
+
+                      <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>password</mat-label>
+                        <input type="password"
+
+                        [(ngModel)]="loginData.password"
+                        name="password"
+                        required
+                        
+                        
+                        matInput placeholder="password">
+                      </mat-form-field>
+
+                      <div class="container text-center">
+                          <button mat-raised-button color="primary">Login</button>
+                      </div><br>
+                      <div class="container text-center ">
+                        <button mat-raised-button color="accent">Reset</button>
+                    </div>
+                
+
+
+
+
+
+
+                </form>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+<div class="login-box">
+  <h2>Login</h2>
+  <form  >
+    <div class="user-box">
+      <input [(ngModel)]="loginData.username" type="text" name="username" required="">
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input [(ngModel)]="loginData.password" type="password" name="password" required="">
+      <label>Password</label>
+    </div>
+    <a (click)="formSubmit()" >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </a>
+  
+
+  </form>
+</div>

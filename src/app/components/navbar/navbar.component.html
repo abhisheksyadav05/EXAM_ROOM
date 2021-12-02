@@ -1,0 +1,43 @@
+<mat-toolbar >
+    <a routerLink='/'mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+  
+    <span style="font-family: 'Open Sans', sans-serif;font-size: x-large; text:color#499b94">EXAMROOM</span>
+</a>
+    <span class="example-spacer"></span>
+
+    <button  *ngIf="!isLoggedIn" [routerLink]="'/login'" style="background-color:  #499b90;border-color: #499b90;color: #fff;">Login<a
+    
+     
+    mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>login</mat-icon>
+    </a></button>
+    <a
+    *ngIf="!isLoggedIn"
+    [routerLink]="'/signup'"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>app_registration</mat-icon>
+    </a>
+    <a
+    (click)="logout()"
+    *ngIf="isLoggedIn"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </a>
+    
+    <button 
+    class="example-icon favorite-icon ml20"
+     mat-button
+     aria-label="Example icon-button eith heart icon"
+    *ngIf="isLoggedIn && user" routerLink="/admin/profile">
+     {{ login.getUser().username }}
+    </button>
+    
+
+  
+    <a 
+    href="https://github.com/abhisheksyadav05/MINI-PROJECT"
+    mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+</a>
+  </mat-toolbar>

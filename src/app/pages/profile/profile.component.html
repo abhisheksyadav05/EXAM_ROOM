@@ -1,0 +1,77 @@
+<mat-card *ngIf="login.getUser()!=null">
+    <h1>PROFILE DETAILS</h1>
+      <mat-card-content>
+
+              
+          <div class="boorstrap-wrapper">
+                 <div class="container">
+                     <div class="container text-center">
+                         <img src="https://i.imgur.com/EvEgy19.jpeg" alt=""
+                           class="profile-image"
+                         />
+                         <h1 >{{ login.getUser().username }}</h1>
+                        
+                     </div>
+                     <div class="row">
+
+                          <div class="col-md-10 offset-md1">
+                              
+                            <!--//table detail-->
+                            <table class="table text-center">
+
+                                 <tr>
+                                     <td>User ID</td>
+                                     <td>{{ login.getUser().id}}</td>
+                                 </tr>
+                                 <tr>
+                                    <td>User ROLE</td>
+                                    <td>{{ login.getUser().authorities[0].authority}}</td>
+                                </tr>
+                                <tr>
+                                    <td>First Name</td>
+                                    <td>{{ login.getUser().firstName}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Last Name</td>
+                                    <td>{{ login.getUser().lastname}}</td>
+                                </tr>
+                                <tr *ngIf="login.getUser().phone!=null">
+                                    <td>Phone no.</td>
+                                    <td >{{ login.getUser().phone}}</td>
+                                </tr>
+                                <tr>
+                                    <td>email</td>
+                                    <td>{{ login.getUser().email}}</td>
+                                </tr>
+
+                                <tr >
+                                    <td>Status</td>
+                                    <td *ngIf="login.getUser().enabled==true">Active</td>
+                                    <td *ngIf="login.getUser().enabled==false">Not Active</td>
+
+                                </tr>
+
+
+                            </table>
+                                
+                          </div>   
+
+
+                     </div>
+
+
+                 </div>
+
+
+          </div>
+
+
+
+      </mat-card-content>
+      <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">UPDATE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+      </mat-card-actions>
+
+
+</mat-card>
